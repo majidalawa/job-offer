@@ -1,0 +1,5 @@
+# Robots.txt for Job Posting Portal
+User-agent: *
+Allow: /
+
+Sitemap: https://majidalawa.github.io/job-offer/sitemap.xml
