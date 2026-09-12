@@ -453,19 +453,6 @@
       object-fit: cover;
       border: 2px solid #3b82f6;
     }
-    .schema-inspect-box {
-      background: #090d16;
-      padding: 1rem;
-      border-radius: 8px;
-      font-family: monospace;
-      font-size: 0.78rem;
-      color: #34d399;
-      max-height: 250px;
-      overflow-y: auto;
-      direction: ltr;
-      text-align: left;
-      border: 1px solid #1e293b;
-    }
 
     /* Footer */
     footer.site-footer {
@@ -509,7 +496,6 @@
         <a href="#details">تفاصيل الوظيفة</a>
         <a href="#requirements">المتطلبات</a>
         <a href="#apply">قدّم الآن</a>
-        <a href="#schema-view">فحص الـ Schema</a>
       </nav>
     </div>
   </header>
@@ -688,48 +674,6 @@
           <li>👥 حجم الفريق: 50 - 100 موظف</li>
           <li>🌐 الموقع الإلكتروني: رسمي ومعتمد</li>
         </ul>
-      </div>
-
-      <!-- SEO & Structured Data Inspection -->
-      <div class="sidebar-widget" id="schema-view">
-        <h4 class="widget-title">🔍 مخطط Schema.org المدمج</h4>
-        <p style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 0.75rem;">
-          هذا العرض مزود بمخطط <code>JobPosting</code> القياسي المعتمد من محرك بحث Google لظهور نتائج الوظائف المنسقة (Rich Snippets):
-        </p>
-        <div class="schema-inspect-box">
-{
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "title": "مطور واجهات أمامية أول",
-  "employmentType": "FULL_TIME",
-  "directApply": true,
-  "baseSalary": {
-    "currency": "DZD",
-    "minValue": 180000,
-    "maxValue": 260000,
-    "unitText": "MONTH"
-  },
-  "jobLocationType": "TELECOMMUTE",
-  "validThrough": "2026-12-31"
-}
-        </div>
-        <p style="color: #38bdf8; font-size: 0.82rem; margin-top: 0.75rem;">
-          ✓ متوافق مع اختبار Google Rich Results و Schema Validator.
-        </p>
-      </div>
-
-      <!-- Share Widget -->
-      <div class="sidebar-widget">
-        <h4 class="widget-title">🔗 مشاركة العرض الوظيفي</h4>
-        <p style="color: #94a3b8; font-size: 0.88rem; margin-bottom: 1rem;">
-          هل تعرف صديقاً أو مطوراً مناسباً لهذه الفرصة؟ شارك العرض معه مباشرة:
-        </p>
-        <button onclick="copyJobUrl()" style="width: 100%; padding: 0.7rem; background: #334155; border: 1px solid var(--card-border); color: #fff; border-radius: 8px; cursor: pointer; font-family: inherit; font-size: 0.95rem; font-weight: 600;">
-          📋 نسخ رابط الوظيفة
-        </button>
-        <div id="copyNotice" style="display: none; color: #34d399; font-size: 0.85rem; text-align: center; margin-top: 0.5rem;">
-          تم نسخ الرابط إلى الحافظة!
-        </div>
       </div>
     </aside>
 
